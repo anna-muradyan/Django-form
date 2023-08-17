@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+
+{%block content%}
+<h1>Welcome to Contact Us Page</h1>
+{%if errors%}
+{{errors}}
+{%endif%}
+
+<form method="post" action="">{%csrf_token%}
+    <label for="">First Name</label>
+    <input type="text" name="first_name" id="">
+    <br>
+    <label for="">Last Name</label>
+    <input type="text" name="email" id="">
+    <br>
+    <label for="">Email</label>
+    <input type="text" name="last_name" id="">
+    <br>
+    <label for="">Message</label>
+    <textarea name="message" id="" cols="30" rows="10"></textarea>
+    <br>
+    <button>Submit</button>
+    
+    
+</form>
+{%endblock%}
+
